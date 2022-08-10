@@ -1,3 +1,31 @@
+
+# Inside the zip file there are some folders like: 
+	Database: "cart/db"
+	phpunitTests: "cart/tests"
+	phpunitTests Source: "cart/src"
+	Config file: "cart/config.php"
+
+# Setup:
+
+ 1. Create an empty database and import database from "cart/db" folder.
+ 2. Set database connection variables into "cart/config.php" file and save.
+ 3. Please go to cart folder from command line and run "composer install" command.
+ 4. run command "composer dump-autoload -o"
+
+# Run Test:
+
+ 1. To run all tests at one time use following command:
+	"php vendor/bin/phpunit tests/cartTests.php"
+
+ 2. To run each test separately run following commands one by one and see results:
+	
+	"php vendor/bin/phpunit tests/cartTests.php --filter testListProducts"
+	"php vendor/bin/phpunit tests/cartTests.php --filter testAddTocart"
+	"php vendor/bin/phpunit tests/cartTests.php --filter testgetItemsTotal"
+	"php vendor/bin/phpunit tests/cartTests.php --filter test_getItemsTotalWithOffer"
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Howsy Software Engineer Code Challenge
 
 This test allows you to demonstrate the skills that will be required as a Software Developer at Howsy. We primarily use PHP at Howsy and would prefer submissions in this format however we will accept submissions in other OOP languages (Java, Python, Ruby) *but please note, day-to-day you will probably be writing PHP*
