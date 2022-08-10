@@ -1,14 +1,8 @@
 
-# Inside the zip file there are some folders like: 
-	Database: "cart/db"
-	phpunitTests: "cart/tests"
-	phpunitTests Source: "cart/src"
-	Config file: "cart/config.php"
-
 # Setup:
 
- 1. Create an empty database and import database from "cart/db" folder.
- 2. Set database connection variables into "cart/config.php" file and save.
+ 1. Create an empty database and import database from "db" folder.
+ 2. Set database connection variables into "config.php" file and save.
  3. Please go to cart folder from command line and run "composer install" command.
  4. run command "composer dump-autoload -o"
 
